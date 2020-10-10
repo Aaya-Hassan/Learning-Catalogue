@@ -1,0 +1,149 @@
+<div class="project-details-container">
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white text-bold-100" href="#">Learning
+            <i class="fa fa-play text-white" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white text-bold-100" href="#">Catalogue <span class="sr-only">(current)</span>
+            <i class="fa fa-play text-white" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white text-bold-100" href="#">Learning Object</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container top-buffer bg-white">
+    <div class="jumbotron jumbotron-fluid">
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-7">
+          <h5>Excel Crash Course</h5>
+          <h6 class="text-muted">Master Excel for Financial Analysis</h6>
+          <span class="text-span">About Course</span>
+          <p class="text-bold-100 text-size">Learn all the tips, tricks, shortcuts, functions and formulas you need to be an Excel power user. This course is designed specifically for Excel users who are performing professional financial analysis and financial modeling. We cover all levels - from beginner to advanced users.</p>
+          <br/>
+          <span class="text-span">Intended Audience</span>
+          <p class="text-bold-100 text-size">Learn all the tips, tricks, shortcuts, functions and formulas you need to be an Excel power user. This course is designed specifically for Excel users who are performing professional financial analysis and financial modeling. We cover all levels - from beginner to advanced users.</p>
+          <br/>
+          <span class="text-span">What you will learn</span>
+          <p class="text-bold-100 text-size">Learn all the tips, tricks, shortcuts, functions and formulas you need to be an Excel power user. This course is designed specifically for Excel users who are performing professional financial analysis and financial modeling. We cover all levels - from beginner to advanced users.</p>
+          <br/>
+          <span class="text-span">Pre-requisits</span>
+          <ul class="list-unstyled info-columns">
+            <li>Courses:</li>
+            <li>Course Family:</li>
+            <li>Competency:</li>
+            <li>400900 - Introduction of Office Excel</li>
+            <li>Basic Software Skills</li>
+            <li>Competency ABC</li>
+          </ul>
+          <br/>
+          <span class="text-span">Courses</span>
+          <div class="card">
+            <ul *ngFor="let partner of listValue | keyvalue let i=index" class="list-unstyled top-buffer">
+              <li class="card-header" [class.active]="opened==i" *ngFor="let innerData of partner.value | keyvalue;let i=index" (click)="opened=opened==i?-1:i">
+                <a>
+                  {{ innerData.key}}
+                </a>
+                <ol class="submenu card-body bg-white" *ngFor="let value of innerData.value">
+                  {{ value }}
+                </ol>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-5 right-container">
+          <div class="container top-buffer">
+            <img src="https://mdbootstrap.com/img/screens/yt/screen-video-6.jpg" alt="Snow">
+            <button class="btn" (click)="openModalWithClass(template)"><img src="../../assets/image/video-play.svg" class="play-btn"></button>
+          </div>
+          <div class="container top-buffer">
+            <ul class="list-unstyled info-columns">
+              <li>Type: </li>
+              <li>Subject: </li>
+              <li>Level: </li>
+              <li>Language: </li>
+              <li>Nature: </li>
+              <li>Job Family: </li>
+              <li>Classification: </li>
+              <li>Course Family: </li>
+              <li>Training Provider: </li>
+              <li>Location: </li>
+              <li>Duration: </li>
+              <li>Instructor Led</li>
+              <li>Information Technology</li>
+              <li>Beginner</li>
+              <li>English</li>
+              <li>Compliance</li>
+              <li>Software</li>
+              <li>DGHR</li>
+              <li>Basic Software Skills</li>
+              <li>iHorizons</li>
+              <li>Dubai, UAE</li>
+              <li>21 Days (25/9/2020 - 26/9/2020) </li>
+            </ul>
+          </div>
+          <div class="container top-buffer border bg-light">
+            <ul class="list-unstyled card-columns top-buffer">
+              <li class="text-bold">Training Hours</li>
+              <li>100</li>
+              <li class="text-bold">Credit Hours</li>
+              <li>50</li>
+              <li class="text-bold">Points</li>
+              <li>150 CPD</li>
+            </ul>
+          </div>
+          <div class="container top-buffer">
+            <ul class="list-unstyled info-columns">
+              <li>Contact Person</li>
+              <li class="text-light">-</li>
+              <li class="text-light">-</li>
+              <li class="text-muted">Maria Rosa</li>
+              <li class="text-muted">05-556880008</li>
+              <li class="text-muted">maria.rosa@gmail.com</li>
+            </ul>
+          </div>
+          <hr/>
+          <div class="container top-buffer">
+            <p>FAQs</p>
+            <span>What will I learn in this course?<p class="text-bold-100">You will learn a lot of advanced of financial equation.</p></span>
+            <span>Should I take this course if I have no previous office experience?
+          <p class="text-bold-100">This Course is simply explained and can be any beginner.</p></span>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <div class="container">
+        <div class="row">
+          <ul class="list-unstyled card-columns col-lg-12">
+            <li><i class="fa fa-user-plus text-primary fa-text-size"></i> Enroll Learners</li>
+            <li><i class="fa fa-leanpub text-primary fa-text-size" aria-hidden="true"></i> Go to Course Details</li>
+            <li><i class="fa fa-remove text-danger fa-text-size" aria-hidden="true"></i> Remove from Catalogue</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container top-buffer">
+    <hr />
+    <br/>
+  </div>
+</div>
+<ng-template #template>
+  <div class="modal-header">
+    <h6 class="modal-title pull-left text-white text-bold-100">Course Preview</h6>
+    <button type="button" class="close pull-right text-white" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div mat-card-image plyr plyrTitle="Custom video" [plyrPlaysInline]="true" [plyrCrossOrigin]="true"
+         [plyrPoster]="poster" [plyrSources]="videoSources" [plyrTracks]="tracks" (plyrInit)="player = $event"
+         (plyrPlay)="played($event)"></div>
+  </div>
+</ng-template>

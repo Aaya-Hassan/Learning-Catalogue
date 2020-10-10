@@ -1,0 +1,93 @@
+.project-details-container {
+  background-color: #eee;
+  height: 100%;
+  .right-container,
+  .card,
+  .card-header {
+    background-color: #eee;
+  }
+
+  .navbar {
+    background-color: midnightblue;
+    height: 35px;
+  }
+
+  .jumbotron {
+    background-image: url("https://visme.co/blog/wp-content/uploads/2019/11/Header-9.jpg");
+    background-size: cover;
+    padding: 6rem 2rem;
+  }
+
+  .top-buffer {
+    margin-top: 20px;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: unset;
+    cursor: pointer;
+  }
+
+  .play-btn {
+    width: 100px !important;
+  }
+
+  .modal-header {
+    padding: .2rem 1rem;
+    background-color: midnightblue;
+  }
+
+  .list-unstyled {
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  .info-columns{
+    column-count: 2;
+  }
+
+  .card-columns {
+    column-count: 3;
+  }
+
+  .text-bold {
+    font-weight: 600;
+  }
+
+  .text-bold-100 {
+    font-weight: 100;
+  }
+
+  .text-size {
+    font-size: smaller;
+  }
+
+  .text-span {
+    font-size: small;
+  }
+
+  .fa-text-size {
+    font-size: 20px;
+  }
+
+  .card ul li .submenu {
+    display: none;
+  }
+
+  .card ul li.active  .submenu {
+    display: block;
+  }
+}
