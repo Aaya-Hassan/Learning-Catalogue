@@ -45,11 +45,6 @@
     width: 100px !important;
   }
 
-  .modal-header {
-    padding: .2rem 1rem;
-    background-color: midnightblue;
-  }
-
   .list-unstyled {
     font-size: 12px;
     line-height: 25px;
@@ -90,4 +85,8 @@
   .card ul li.active  .submenu {
     display: block;
   }
+}
+
+.modal-header {
+  background-color: midnightblue;
 }

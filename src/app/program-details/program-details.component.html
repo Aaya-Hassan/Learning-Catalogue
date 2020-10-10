@@ -59,7 +59,7 @@
         </div>
         <div class="col-lg-5 right-container">
           <div class="container top-buffer">
-            <img src="https://mdbootstrap.com/img/screens/yt/screen-video-6.jpg" alt="Snow">
+            <img src="https://cdn-az.allevents.in/events3/banners/74cfa8cc71aaed7212c2adde3f0aa8be26977013dc6a1c4b59246b5f0ae64cac-rimg-w526-h295-gmir.jpg?v=1576788782" alt="Excel">
             <button class="btn" (click)="openModalWithClass(template)"><img src="../../assets/image/video-play.svg" class="play-btn"></button>
           </div>
           <div class="container top-buffer">
@@ -143,7 +143,7 @@
   </div>
   <div class="modal-body">
     <div mat-card-image plyr plyrTitle="Custom video" [plyrPlaysInline]="true" [plyrCrossOrigin]="true"
-         [plyrPoster]="poster" [plyrSources]="videoSources" [plyrTracks]="tracks" (plyrInit)="player = $event"
+         [plyrPoster]="poster" [plyrSources]="youtubeSources" [plyrTracks]="tracks" (plyrInit)="player = $event"
          (plyrPlay)="played($event)"></div>
   </div>
 </ng-template>

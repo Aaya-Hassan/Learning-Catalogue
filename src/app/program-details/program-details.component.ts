@@ -20,7 +20,15 @@ export class ProgramDetailsComponent implements OnInit {
       size: 576,
     },
   ];
-  poster = 'https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg';
+
+  youtubeSources = [
+    {
+      src: 'https://www.youtube.com/watch?v=PEnKiVPXrew&list=PL90E1F26C7B85E78F&index=1',
+      provider: 'youtube',
+    },
+  ];
+  
+  poster = 'https://i.ytimg.com/vi/PEnKiVPXrew/hqdefault.jpg';
 
   tracks = [
     {
